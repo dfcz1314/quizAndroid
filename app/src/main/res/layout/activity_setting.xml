@@ -30,4 +30,184 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/toggleButton"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:width="300dp"
+        android:hint="문제를 입력하세요."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <TextView
+        android:id="@+id/pointText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="27dp"
+        android:text="배점"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputQuestion" />
+
+    <EditText
+        android:id="@+id/pointTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:width="50dp"
+        android:maxLength="3"
+        app:layout_constraintStart_toEndOf="@+id/pointText"
+        app:layout_constraintTop_toBottomOf="@+id/inputQuestion" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="40dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointTextInput"
+        tools:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioBtn4"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ex1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="55dp"
+        android:hint="보기1"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/pointTextInput"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ex2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:width="150dp"
+        android:hint="보기2"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ex1"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ex3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:hint="보기3"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ex2"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ex4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:width="150dp"
+        android:hint="보기4"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/ex3"
+        tools:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="43dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointTextInput"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/radioImageBtn1"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioImageBtn2"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioImageBtn3"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioImageBtn4"
+            android:layout_width="40dp"
+            android:layout_height="100dp"
+            android:text="" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="257dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:srcCompat="?attr/actionBarItemBackground"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="257dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="257dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="257dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/image3"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
